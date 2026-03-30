@@ -17,14 +17,6 @@ This repository contains an ASP.NET Core HTTP API that controls an imaginary int
   - On every **5th call**, returns **503 Service Unavailable** with an **empty body**.
   - On **April 1st**, returns **418 I'm a teapot** with an **empty body** (overrides the 5th call rule).
 
-## Tech choices (short)
-
-- **Minimal API** for a small surface area and easy test hosting.
-- **Singleton in-memory counter** (`BrewCounter`) to track calls across requests.
-- **Injectable clock** (`IDateTimeProvider`) to keep date/time logic testable.
-- **Integration tests** using `WebApplicationFactory` + `HttpClient`.
-- **Unit tests** covering formatter and business rules.
-
 ## Running
 
 ```bash
