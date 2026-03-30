@@ -1,0 +1,1 @@
+namespace CoffeeMachineApi.Services; public interface ICoffeeBrewService { BrewOutcome Brew(); }
